@@ -96,6 +96,7 @@ function buildSidebar() {
   const info = qs('#user-menu-info');
   info.innerHTML = `<strong style="color:var(--ink);">${escapeHtml(Ctx.user.nombre)}</strong><br>${escapeHtml(Ctx.user.email)}`;
   qs('#reset-demo-btn').style.display = Ctx.role === 'employee' ? '' : 'none';
+  qs('#gestion-link-btn').style.display = Ctx.role === 'employee' ? '' : 'none';
 }
 
 function markActiveNav(top) {
